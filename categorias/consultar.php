@@ -9,6 +9,8 @@ $prp->execute();
 <!DOCTYPE html>
 <html lang="pt-BR">
 
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,13 +19,13 @@ $prp->execute();
 </head>
 
 <body>
-    <div class="container">
+    <div class="container mt-3">
         <div class="text-end">
             <a class="btn btn-success mt-3" href="inserir.php">📄 Novo</a>
         </div>
         <div class="input-group mt-3">
-            <input type="text" name="edtfiltro" id="edtfiltro" class="form-control" placeholder="DIGITE A CATEGORIA PARA FILTRAR">
-            <button type="button" onclick="" name="btnfiltrar" id="btnfiltrar" class="btn btn-info">🔎 Filtrar</button>
+            <input type="text" name="edtbusca" id="edtbusca" class="form-control" placeholder="DIGITE A CATEGORIA PARA FILTRAR">
+            <button type="button" class="btn btn-info">🔎 Filtrar</button>
         </div>
         <table class="table table-striped">
             <thead>
@@ -43,8 +45,8 @@ $prp->execute();
                             <?php echo $ds['catativo'] ? '<span class="text-success">ATIVO</span>' : '<span class="text-danger"><b>INATIVO</b></span>'; ?>
                         </td>
                         <th scope="row">
-                            <a class="btn btn-warning" href="alterar.php">✏ Editar</a>
-                            <a class="btn btn-danger" href="excluir.php">🗑 Excluir</a>
+                            <a class="btn btn-warning" href="alterar.php">✏</a>
+                            <a class="btn btn-danger" href="excluir.php">🗑</a>
                         </th>
                     </tr>
                 <?php } ?>
@@ -56,3 +58,11 @@ $prp->execute();
 </body>
 
 </html>
+
+
+
+
+
+
+
+
